@@ -2,7 +2,10 @@
   profiles:
     active:
     - dev
+<<<<<<< HEAD
+---
 =======
+>>>>>>> c21fb37a1d8048df245e34c365267929dbb34be0
 spring:
   profiles: dev
   application:
