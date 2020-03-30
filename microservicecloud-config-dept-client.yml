@@ -2,14 +2,20 @@ spring:
   profiles:
     active:
     - dev
+
+
+
+spring:
+  profiles:
+    active:
+    - dev
 ---
 server:
-  port: 8001
-
+  port: 8201
 spring:
   profiles: dev
   application:
-    name: microservicecloud-config-dept-client
+    name: microservicecloud-config-client
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource            # 当前数据源操作类型
     driver-class-name: org.gjt.mm.mysql.Driver              # mysql驱动包
@@ -41,14 +47,12 @@ info:
   build.artifactId: $project.artifactId$
   build.version: $project.version$
 ---
----
 server:
-  port: 8001
-
+  port: 8201
 spring:
   profiles: test
   application:
-    name: microservicecloud-config-dept-client
+    name: microservicecloud-config-client
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource            # 当前数据源操作类型
     driver-class-name: org.gjt.mm.mysql.Driver              # mysql驱动包
